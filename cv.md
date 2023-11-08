@@ -15,6 +15,7 @@
 - HTML5, CSS3
 - JavaScript Basics
 - React Basics
+- CSS in JS
 - Git, GitHub
 - Sass
 - Gulp
