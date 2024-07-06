@@ -15,7 +15,7 @@
         </div>
       </header>
       <main class="main">
-        <div class="left-block">
+        <div class="left-block" id="about-me-link">
           <img src="img/ava.png" alt="avatar" class="left-block__avatar" />
           <div class="left-block__aboutme">
             <h2 class="left-block__aboutme-title">About me</h2>
@@ -67,7 +67,7 @@
         <div class="right-block">
           <div class="skills">
             <h2 class="skills__title">Hard skills</h2>
-            <ul class="skills__hard">
+            <ul class="skills__hard" id="hard-skils">
               <li class="skills__html">
                 <div class="skills__container">
                   <p class="skill__name">HTML</p>
@@ -102,7 +102,7 @@
               </li>
             </ul>
             <h2 class="skills__title">Language</h2>
-            <ul class="skills__language">
+            <ul class="skills__language" id="language">
               <li class="skill__language">
                 <div class="skills__container">
                   <p class="skill__name">Russian</p>
@@ -120,7 +120,7 @@
                 </div>
               </li>
             </ul>
-            <div class="example-code">
+            <div class="example-code" id="example-code">
               <h2 class="skills__title">Example code</h2>
               <pre class="example-code__text">
                 <code class="language-js">
@@ -133,13 +133,67 @@
     </code>
               </pre>
             </div>
-            <div class="projects">
+            <div class="projects" id="projects">
               <h2 class="skills__title">Projects</h2>
+              <ul class="project__list">
+                <li class="project__item">
+                  <a class="project__item-link" href="https://yoopigo.github.io/keksobooking/" target="_blank">
+                    <img src="img/site-1.png" alt="site" class="project__item-img" />
+                    <h3 class="project__item-title">Keksobooking</h3>
+                  </a>
+                </li>
+                <li class="project__item">
+                  <a class="project__item-link" href="https://yoopigo.github.io/cat-energy/Index.html" target="_blank">
+                    <img src="img/site-2.png" alt="site" class="project__item-img" />
+                    <h3 class="project__item-title">Cat Energy</h3>
+                  </a>
+                </li>
+                <li class="project__item">
+                  <a class="project__item-link" href="https://yoopigo.github.io/Hangman/app.html" target="_blank">
+                    <img src="img/site-3.png" alt="site" class="project__item-img" />
+                    <h3 class="project__item-title">Hangman</h3>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </main>
+      <footer class="footer">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item">
+            <a href="#about-me-link">About me</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#hard-skils">Hard skills</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#language">Language</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#example-code">Example code</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#projects">Project</a>
+          </li>
+        </ul>
+
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a href="https://rs.school/courses/javascript-ru" target="_blank" class="footer__social-link">
+              <img src="img/rs.svg" alt="" class="footer__social-img" />
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="https://github.com/yoopigo" target="_blank" class="footer__social-link">
+              <img src="img/gh.svg" alt="" class="footer__social-img" />
+            </a>
+          </li>
+        </ul>
+        <p class="footer__copyright">Created in 2024</p>
+      </footer>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
