@@ -1,12 +1,199 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>CV</title>
-</head>
-<body>
-<p>RSS</p>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CV</title>
+  </head>
+  <body class="page__body">
+    <div class="page__body-wrapper">
+      <header class="header">
+        <div class="header__title">
+          <h1 class="header__title-name">Andrey Baurov</h1>
+          <p class="header__title-text">Frontend developer</p>
+        </div>
+      </header>
+      <main class="main">
+        <div class="left-block" id="about-me-link">
+          <img src="img/ava.png" alt="avatar" class="left-block__avatar" />
+          <div class="left-block__aboutme">
+            <h2 class="left-block__aboutme-title">About me</h2>
+            <p class="left-block__aboutme-text">
+              I'm learning front-end development because I see in it great opportunities for creativity and implementation of my ideas. I want to
+              learn how to create beautiful and functional websites that will be useful to users.
+            </p>
+          </div>
+          <div class="left-block__education">
+            <h2 class="left-block__education-title">Education</h2>
+            <div class="left-block__education-text">
+              <h3 class="left-block__education-text-specialization">Ukhta State Technical University</h3>
+              <p class="left-block__education-text-specialization-desc">Engineer</p>
+            </div>
+          </div>
+          <div class="left-block__contacts">
+            <h2 class="left-block__contacts-title">Contacts</h2>
+            <ul class="left-block__contacts-list">
+              <li class="left-block__contacts-item left-block__contacts-item-text">
+                <img src="img/phone.png" alt="icon-phone" class="left-block__contacts-img" /><a
+                  class="left-block__contacts-item-phone"
+                  href="tel:8999999999"
+                  >+7(999) 999-99-99
+                </a>
+              </li>
+              <li class="left-block__contacts-item left-block__contacts-item-text">
+                <img src="img/mail.png" alt="icon-mail" class="left-block__contacts-img" /><a
+                  class="left-block__contacts-item-email"
+                  href="mailto:mail@mail.com"
+                  >mail@mail.com
+                </a>
+              </li>
+              <li class="left-block__contacts-item left-block__contacts-item-text">
+                <img src="img/tg.png" alt="icon-tg" class="left-block__contacts-img" /><a
+                  class="left-block__contacts-item-tg"
+                  href="https://t.me/yoopigo"
+                  target="_blank"
+                  >yoopi</a
+                >
+              </li>
+              <li class="left-block__contacts-item left-block__contacts-item">
+                <img src="img/target.png" alt="icon-target" class="left-block__contacts-img" />
+                <p class="left-block__contacts-item-addres">Russia, Ekaterinburg</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="right-block">
+          <div class="skills">
+            <h2 class="skills__title">Hard skills</h2>
+            <ul class="skills__hard" id="hard-skils">
+              <li class="skills__html">
+                <div class="skills__container">
+                  <p class="skill__name">HTML</p>
+                  <div class="skill__bar">
+                    <div class="skill__bar-progress skill__bar-progress--html" style="--progress-width: 0%"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="skills__css">
+                <div class="skills__container">
+                  <p class="skill__name">CSS</p>
+                  <div class="skill__bar">
+                    <div class="skill__bar-progress skill__bar-progress--css" style="--progress-width: 0%"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="skills__scss">
+                <div class="skills__container">
+                  <p class="skill__name">SCSS</p>
+                  <div class="skill__bar">
+                    <div class="skill__bar-progress skill__bar-progress--scss" style="--progress-width: 0%"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="skills__js">
+                <div class="skills__container">
+                  <p class="skill__name">Javascript</p>
+                  <div class="skill__bar">
+                    <div class="skill__bar-progress skill__bar-progress--js" style="--progress-width: 0%"></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <h2 class="skills__title">Language</h2>
+            <ul class="skills__language" id="language">
+              <li class="skill__language">
+                <div class="skills__container">
+                  <p class="skill__name">Russian</p>
+                  <div class="skill__bar">
+                    <div class="skill__bar-progress skill__bar-progress--russian" style="--progress-width: 0%"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="skill__language">
+                <div class="skills__container">
+                  <p class="skill__name">English</p>
+                  <div class="skill__bar">
+                    <div class="skill__bar-progress skill__bar-progress--english" style="--progress-width: 0%"></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="example-code" id="example-code">
+              <h2 class="skills__title">Example code</h2>
+              <pre class="example-code__text">
+                <code class="language-js">
+      <span class="code-color__violet">function</span>  <span class="code-color__blue">greeting</span><span class="code-color__yellow">(</span>name<span class="code-color__yellow">)</span> <span class="code-color__yellow">{</span>
+        <span class="code-color__violet">const</span> greetings = <span class="code-color__violet">[</span> '<span class="code-color__green">Hello</span>', '<span class="code-color__green">Hi</span>', '<span class="code-color__green">Welcome</span>'<span class="code-color__violet">]</span><span class="code-color__ligth-blue">;</span>
+        <span class="code-color__violet">const</span> randomIndex = Math.<span class="code-color__blue">floor</span>(Math.<span class="code-color__blue">random()</span> <span class="code-color__ligth-blue">*</span> greetings.length)<span class="code-color__ligth-blue">;</span>
+        <span class="code-color__violet">const</span> randomGreeting = greetings<span class="code-color__violet">[</span>randomIndex<span class="code-color__violet">]</span><span class="code-color__yellow">};</span>
+        <span class="code-color__ligth-blue">return`${</span> randomGreeting<span class="code-color__ligth-blue"> ${</span>name<span class="code-color__ligth-blue">}`;</span>
+        <span class="code-color__yellow">}</span>
+    </code>
+              </pre>
+            </div>
+            <div class="projects" id="projects">
+              <h2 class="skills__title">Projects</h2>
+              <ul class="project__list">
+                <li class="project__item">
+                  <a class="project__item-link" href="https://yoopigo.github.io/keksobooking/" target="_blank">
+                    <img src="img/site-1.png" alt="site" class="project__item-img" />
+                    <h3 class="project__item-title">Keksobooking</h3>
+                  </a>
+                </li>
+                <li class="project__item">
+                  <a class="project__item-link" href="https://yoopigo.github.io/cat-energy/Index.html" target="_blank">
+                    <img src="img/site-2.png" alt="site" class="project__item-img" />
+                    <h3 class="project__item-title">Cat Energy</h3>
+                  </a>
+                </li>
+                <li class="project__item">
+                  <a class="project__item-link" href="https://yoopigo.github.io/Hangman/app.html" target="_blank">
+                    <img src="img/site-3.png" alt="site" class="project__item-img" />
+                    <h3 class="project__item-title">Hangman</h3>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item">
+            <a href="#about-me-link">About me</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#hard-skils">Hard skills</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#language">Language</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#example-code">Example code</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#projects">Project</a>
+          </li>
+        </ul>
+
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a href="https://rs.school/courses/javascript-ru" target="_blank" class="footer__social-link">
+              <img src="img/rs.svg" alt="" class="footer__social-img" />
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="https://github.com/yoopigo" target="_blank" class="footer__social-link">
+              <img src="img/gh.svg" alt="" class="footer__social-img" />
+            </a>
+          </li>
+        </ul>
+        <p class="footer__copyright">Created in 2024</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
