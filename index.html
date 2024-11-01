@@ -114,39 +114,77 @@
               <h2 class="skills__title">Example code</h2>
               <pre class="example-code__text">
                 <code class="language-js">
-      <span class="code-color__violet">function</span>  <span class="code-color__blue">greeting</span><span class="code-color__yellow">(</span>name<span class="code-color__yellow">)</span> <span class="code-color__yellow">{</span>
-        <span class="code-color__violet">const</span> greetings = <span class="code-color__violet">[</span> '<span class="code-color__green">Hello</span>', '<span class="code-color__green">Hi</span>', '<span class="code-color__green">Welcome</span>'<span class="code-color__violet">]</span><span class="code-color__ligth-blue">;</span>
-        <span class="code-color__violet">const</span> randomIndex = Math.<span class="code-color__blue">floor</span>(Math.<span class="code-color__blue">random()</span> <span class="code-color__ligth-blue">*</span> greetings.length)<span class="code-color__ligth-blue">;</span>
-        <span class="code-color__violet">const</span> randomGreeting = greetings<span class="code-color__violet">[</span>randomIndex<span class="code-color__violet">]</span><span class="code-color__yellow">};</span>
-        <span class="code-color__ligth-blue">return`${</span> randomGreeting<span class="code-color__ligth-blue
-}>}, ${name}!`</span>
-      <span class="code-color__yellow">}</span>
-      </code>
+<span class="code-color__violet">function</span> <span class="code-color__blue">greeting</span><span class="code-color__yellow">(</span>name<span class="code-color__yellow">)</span> <span class="code-color__yellow">{</span>
+  <span class="code-color__violet">const</span> greetings = <span class="code-color__violet">[</span> '<span class="code-color__green">Hello</span>', '<span class="code-color__green">Hi</span>', '<span class="code-color__green">Welcome</span>'<span class="code-color__violet">]</span><span class="code-color__light-blue">;</span>
+  <span class="code-color__violet">const</span> randomIndex = Math.<span class="code-color__blue">floor</span>(Math.<span class="code-color__blue">random()</span> <span class="code-color__light-blue">*</span> greetings.length)<span class="code-color__light-blue">;</span>
+  <span class="code-color__violet">const</span> randomGreeting = greetings<span class="code-color__violet">[</span>randomIndex<span class="code-color__violet">]</span><span class="code-color__yellow">};</span>
+  <span class="code-color__light-blue">return `${</span> randomGreeting<span class="code-color__light-blue">}, ${name}!`;</span>
+<span class="code-color__yellow">}</span>
+                </code>
               </pre>
+            </div>
+            <div class="projects" id="projects">
+              <h2 class="skills__title">Projects</h2>
+              <ul class="project__list">
+                <li class="project__item">
+                  <a class="project__item-link" href="https://yoopigo.github.io/keksobooking/" target="_blank">
+                    <img src="img/site-1.png" alt="site" class="project__item-img">
+                    <h3 class="project__item-title">Keksobooking</h3>
+                  </a>
+                </li>
+                <li class="project__item">
+                  <a class="project__item-link" href="https://yoopigo.github.io/cat-energy/Index.html" target="_blank">
+                    <img src="img/site-2.png" alt="site" class="project__item-img">
+                    <h3 class="project__item-title">Cat Energy</h3>
+                  </a>
+                </li>
+                <li class="project__item">
+                  <a class="project__item-link" href="https://yoopigo.github.io/Hangman/app.html" target="_blank">
+                    <img src="img/site-3.png" alt="site" class="project__item-img">
+                    <h3 class="project__item-title">Hangman</h3>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </main>
       <footer class="footer">
-        <h2 class="footer__title">My social media</h2>
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item">
+            <a href="#about-me-link">About me</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#hard-skills">Hard skills</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#language">Languages</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#example-code">Example code
+</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#projects">Projects</a>
+          </li>
+        </ul>
+
         <ul class="footer__social-list">
           <li class="footer__social-item">
-            <a class="footer__social-link" href="https://github.com/yoopigo" target="_blank">
-              <img src="img/gh.svg" alt="GitHub Profile" class="footer__social-img">
+            <a href="https://rs.school/courses/javascript-ru" target="_blank" class="footer__social-link">
+              <img src="img/rs.svg" alt="RS School" class="footer__social-img">
             </a>
           </li>
           <li class="footer__social-item">
-            <a class="footer__social-link" href="https://vk.com/id269367477" target="_blank">
-              <img src="img/vk.svg" alt="VK Profile" class="footer__social-img">
-            </a>
-          </li>
-          <li class="footer__social-item">
-            <a class="footer__social-link" href="https://t.me/yoopigo" target="_blank">
-              <img src="img/tg.svg" alt="Telegram Profile" class="footer__social-img">
+            <a href="https://github.com/yoopigo" target="_blank" class="footer__social-link">
+              <img src="img/gh.svg" alt="GitHub" class="footer__social-img">
             </a>
           </li>
         </ul>
+        <p class="footer__copyright">Created in 2024</p>
       </footer>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
